@@ -1,0 +1,607 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (México) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+infoUsuario DIALOGEX 0, 0, 227, 99
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Informacion del usuario"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Nombre:",IDC_STATIC,24,24,29,8
+    LTEXT           "Aquí va el nombre del usuario xd",infoNombre,66,24,106,8
+    LTEXT           "Contraseña:",IDC_STATIC,12,42,39,8
+    LTEXT           "Aqui la contra",infoContra,66,42,45,8
+    LTEXT           "Posición:",IDC_STATIC,24,60,29,8
+    LTEXT           "Aqui la posición",infoPos,66,60,51,8
+END
+
+bajaUsuario DIALOGEX 0, 0, 203, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Baja de usuario"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Usuario",IDC_STATIC,18,18,25,8
+    LTEXT           "Posicion",IDC_STATIC,18,60,27,8
+    COMBOBOX        usBajaNombre,54,18,114,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        usBajaPos,54,60,114,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Eliminar",usBajaElim,78,84,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    infoUsuario, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    bajaUsuario, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+infoUsuario AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+bajaUsuario AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Español (México) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (España, alfabetización internacional) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+inicioSesion DIALOGEX 0, 0, 309, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Inicio de Sesion"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Registrarse",inRegistro,176,86,50,14
+    PUSHBUTTON      "SALIR",inSalir,236,86,50,14
+    EDITTEXT        inNombre,115,21,108,14,ES_AUTOHSCROLL
+    EDITTEXT        inContra,113,47,109,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Usuario",IDC_STATIC,77,23,25,8
+    LTEXT           "Contraseña",IDC_STATIC,72,47,38,8
+    LTEXT           "Eres nuevo? REGISTRATE!",IDC_STATIC,81,89,86,8
+    PUSHBUTTON      "Ingresar",inIngresar,17,86,50,14
+END
+
+registroUsuario DIALOGEX 0, 0, 279, 97
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Registro de usuario"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancelar",usRegBotCancelar,215,54,50,14
+    EDITTEXT        usRegNombre,71,17,109,16,ES_AUTOHSCROLL
+    EDITTEXT        usRegContra,71,41,109,16,ES_AUTOHSCROLL
+    LTEXT           "Usuario",IDC_STATIC,23,19,25,8
+    LTEXT           "Contraseña",IDC_STATIC,19,46,38,8
+    PUSHBUTTON      "Registrar",usRegBotReg,214,23,50,14
+    LTEXT           "Posicion",IDC_STATIC,24,66,27,8
+    COMBOBOX        usRegComboPos,72,66,108,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+bajaMedico DIALOGEX 0, 0, 343, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Baja de Medico"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,71,18,127,14,ES_AUTOHSCROLL
+    LTEXT           "NOMBRE:",IDC_STATIC,34,20,32,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BITMAP,266,34,15,13
+    PUSHBUTTON      "ELIMINAR",IDC_BUTTON1,108,54,50,14
+END
+
+altaMedico DIALOGEX 0, 0, 331, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Alta de Medicos"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "ALTA",IDC_BUTTON1,225,196,50,14
+    LTEXT           "CEDULA:",IDC_STATIC,40,19,30,8
+    LTEXT           "NOMBRE COMPLETO:",IDC_STATIC,18,47,70,8
+    LTEXT           "NO. CONSULTORIO:",IDC_STATIC,17,73,67,8
+    LTEXT           "TURNO:",IDC_STATIC,19,97,27,8
+    LTEXT           "TELEFONO:",IDC_STATIC,20,123,38,8
+    LTEXT           "DIAS QUE ATIENDE PX:",IDC_STATIC,19,149,76,8
+    EDITTEXT        IDC_EDIT1,80,18,127,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,89,46,117,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,85,71,120,14,ES_AUTOHSCROLL
+    CONTROL         "Lunes",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,109,141,35,10
+    CONTROL         "Martes",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,107,161,38,10
+    CONTROL         "Miercoles",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,151,141,45,10
+    CONTROL         "Jueves",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,153,158,39,10
+    CONTROL         "Viernes",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,203,141,39,10
+    CONTROL         "Sabado",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,201,161,40,10
+    CONTROL         "Domingo",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,246,152,43,10
+    EDITTEXT        IDC_EDIT5,83,116,122,14,ES_AUTOHSCROLL
+    CONTROL         "Matutino",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,55,95,44,10
+    CONTROL         "Vespertino",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,101,94,50,10
+    CONTROL         "Noche",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,159,95,36,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BITMAP,260,54,15,13
+    LTEXT           "HORARIO:",IDC_STATIC,19,193,36,8
+    EDITTEXT        IDC_EDIT7,91,185,98,14,ES_AUTOHSCROLL
+END
+
+listaMedicos DIALOGEX 0, 0, 273, 261
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Lista de Medicos"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,29,46,212,193,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+modificarMedico DIALOGEX 0, 0, 331, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "modificar de Medicos"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "MODIFICAR",IDC_BUTTON1,249,200,50,14
+    LTEXT           "CEDULA:",IDC_STATIC,40,19,30,8
+    LTEXT           "NOMBRE COMPLETO:",IDC_STATIC,18,47,70,8
+    LTEXT           "NO. CONSULTORIO:",IDC_STATIC,17,73,67,8
+    LTEXT           "TURNO:",IDC_STATIC,19,97,27,8
+    LTEXT           "TELEFONO:",IDC_STATIC,20,123,38,8
+    LTEXT           "DIAS QUE ATIENDE PX:",IDC_STATIC,19,149,76,8
+    EDITTEXT        IDC_EDIT1,80,18,127,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,89,46,117,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,85,71,120,14,ES_AUTOHSCROLL
+    CONTROL         "Lunes",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,109,141,35,10
+    CONTROL         "Martes",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,107,161,38,10
+    CONTROL         "Miercoles",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,151,141,45,10
+    CONTROL         "Jueves",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,153,158,39,10
+    CONTROL         "Viernes",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,203,141,39,10
+    CONTROL         "Sabado",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,201,161,40,10
+    CONTROL         "Domingo",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,246,152,43,10
+    EDITTEXT        IDC_EDIT5,83,116,122,14,ES_AUTOHSCROLL
+    CONTROL         "Matutino",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,55,95,44,10
+    CONTROL         "Vespertino",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,101,94,50,10
+    CONTROL         "Noche",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,159,95,36,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BITMAP,260,54,15,13
+    LTEXT           "HORARIO:",IDC_STATIC,19,193,36,8
+    EDITTEXT        IDC_EDIT7,91,185,98,14,ES_AUTOHSCROLL
+END
+
+altaPx DIALOGEX 0, 0, 333, 225
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Alta de Paciente"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "NOMBRE COMPLETO:",IDC_STATIC,20,24,70,8
+    LTEXT           "GENERO:",IDC_STATIC,21,51,31,8
+    LTEXT           "TELEFONO:",IDC_STATIC,19,78,38,8
+    LTEXT           "REFERENCIAS:",IDC_STATIC,19,103,50,8
+    LTEXT           "FECHA DE NACIMIENTO:",IDC_STATIC,17,177,81,8
+    LTEXT           "EDAD:",IDC_STATIC,19,200,22,8
+    LTEXT           "MEDICO QUE LO ATENDIO:",IDC_STATIC,17,146,89,8
+    EDITTEXT        IDC_EDIT1,120,18,128,16,ES_AUTOHSCROLL
+    CONTROL         "HOMBRE",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,79,50,44,10
+    CONTROL         "MUJER",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,133,50,38,10
+    LTEXT           "OTRO:",IDC_STATIC,177,52,23,8
+    EDITTEXT        IDC_EDIT2,204,51,103,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,69,74,132,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,79,99,206,28,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,114,143,112,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,106,172,100,15
+    EDITTEXT        IDC_EDIT6,55,195,69,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "ALTA",IDC_BUTTON1,249,187,50,14
+END
+
+modificarPaciente DIALOGEX 0, 0, 333, 225
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Modificar Paciente"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "NOMBRE COMPLETO:",IDC_STATIC,20,24,70,8
+    LTEXT           "GENERO:",IDC_STATIC,21,51,31,8
+    LTEXT           "TELEFONO:",IDC_STATIC,19,78,38,8
+    LTEXT           "REFERENCIAS:",IDC_STATIC,19,103,50,8
+    LTEXT           "FECHA DE NACIMIENTO:",IDC_STATIC,17,177,81,8
+    LTEXT           "EDAD:",IDC_STATIC,19,200,22,8
+    LTEXT           "MEDICO QUE LO ATENDIO:",IDC_STATIC,17,146,89,8
+    EDITTEXT        IDC_EDIT1,120,18,128,16,ES_AUTOHSCROLL
+    CONTROL         "HOMBRE",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,79,50,44,10
+    CONTROL         "MUJER",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,133,50,38,10
+    LTEXT           "OTRO:",IDC_STATIC,177,52,23,8
+    EDITTEXT        IDC_EDIT2,204,51,103,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,69,74,132,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,79,99,206,28,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,114,143,112,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,106,172,100,15
+    EDITTEXT        IDC_EDIT6,55,195,69,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "MODIFICAR",IDC_BUTTON1,249,187,50,14
+END
+
+listaPx DIALOGEX 0, 0, 351, 251
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Listas de Px"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,49,39,236,197,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+bajaPx DIALOGEX 0, 0, 309, 107
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Baja de Paciente"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancelar",IDCANCEL,245,79,50,14
+    LTEXT           "NOMBRE:",IDC_STATIC,16,19,32,8
+    LTEXT           "FECHA DE NACIMIENTO:",IDC_STATIC,18,38,81,8
+    LTEXT           "TEL:",IDC_STATIC,22,58,15,8
+    LTEXT           "EDAD:",IDC_STATIC,18,81,22,8
+    EDITTEXT        IDC_EDIT1,115,17,137,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,138,39,100,15
+    EDITTEXT        IDC_EDIT2,40,57,86,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,40,80,85,14,ES_AUTOHSCROLL
+END
+
+altaCita DIALOGEX 0, 0, 397, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "ALTA CITA"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "ALTA DE CITA",IDCANCEL,311,137,56,17
+    CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | MCS_NOTODAYCIRCLE | WS_TABSTOP,31,20,144,107
+    LTEXT           "NOMBRE PX:",IDC_STATIC,198,27,42,8
+    EDITTEXT        IDC_EDIT2,250,24,115,14,ES_AUTOHSCROLL
+    LTEXT           "ESPECIALIDAD:",IDC_STATIC,195,64,52,8
+    COMBOBOX        IDC_COMBO1,255,63,97,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "TURNO:",IDC_STATIC,208,98,27,8
+    COMBOBOX        IDC_COMBO2,258,94,96,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+listaCita DIALOGEX 0, 0, 429, 227
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "LISTA CITAS"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,154,30,211,176,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO1,39,62,80,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ESPECIALIDAD:",IDC_STATIC,55,47,52,8
+END
+
+bajaCita DIALOGEX 0, 0, 397, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "BAJA DE CITA"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "BAJA DE CITA",IDCANCEL,311,137,56,17
+    CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | MCS_NOTODAYCIRCLE | WS_TABSTOP,31,20,144,107
+    LTEXT           "NOMBRE PX:",IDC_STATIC,198,27,42,8
+    EDITTEXT        IDC_EDIT2,250,24,115,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ESPECIALIDAD:",IDC_STATIC,195,64,52,8
+    COMBOBOX        IDC_COMBO1,255,63,97,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "TURNO:",IDC_STATIC,208,98,27,8
+    COMBOBOX        IDC_COMBO2,258,94,96,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    inicioSesion, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    registroUsuario, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 90
+    END
+
+    bajaMedico, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    altaMedico, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    listaMedicos, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 254
+    END
+
+    modificarMedico, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    altaPx, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    modificarPaciente, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    listaPx, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    bajaPx, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    altaCita, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    listaCita, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 422
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 220
+    END
+
+    bajaCita, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+inicioSesion AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+registroUsuario AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+bajaMedico AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+altaMedico AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+modificarMedico AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+listaMedicos AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+altaPx AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+modificarPaciente AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+listaPx AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+bajaPx AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+altaCita AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+listaCita AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+bajaCita AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Usuarios"
+    BEGIN
+        MENUITEM "Mi informacion",              infoUs
+        MENUITEM "Alta",                        altaUs
+        MENUITEM "Baja",                        bajaUs
+    END
+    POPUP "Medicos"
+    BEGIN
+        MENUITEM "ALta",                        ID_MEDICOS_ALTA
+        MENUITEM "Baja",                        ID_MEDICOS_BAJA
+        MENUITEM "Modificar",                   ID_MEDICOS_MODIFICAR
+        MENUITEM "Lista",                       ID_MEDICOS_LISTA
+        MENUITEM "Especialidades",              ID_MEDICOS_ESPECIALIDADES
+    END
+    POPUP "Px"
+    BEGIN
+        MENUITEM "Nuevo Px",                    ID_PX_ALTA
+        MENUITEM "Baja",                        ID_PX_BAJA
+        MENUITEM "Lista",                       ID_PX_LISTA
+    END
+    POPUP "Citas"
+    BEGIN
+        MENUITEM "Nueva cita",                  ID_CITAS_NUEVA
+        MENUITEM "Lista",                       ID_CITAS_LISTA
+        MENUITEM "Calendario",                  ID_CITAS_CALENDARIO
+        MENUITEM "Especialidad",                ID_CITAS_ESPECIALIDAD
+    END
+    POPUP "Especialidad"
+    BEGIN
+        MENUITEM "Baja",                        ID_ESPECIALIDAD_LISTA
+        MENUITEM "Alta",                        ID_ESPECIALIDAD_ALTA
+        MENUITEM "Listas",                      ID_ESPECIALIDAD_BAJA
+    END
+END
+
+#endif    // Español (España, alfabetización internacional) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
