@@ -2,7 +2,6 @@
 // Archivo de inclusión generado de Microsoft Visual C++.
 // Usado por PIA Estructura.rc
 //
-#define ID_BajaMed                      2
 #define usRegBotReg                     4
 #define inicioSesion                    7
 #define IDD_DIALOG1                     103
@@ -30,8 +29,14 @@
 #define IDD_ALTA_CITA1                  124
 #define IDD_BAJA_CITA1                  124
 #define bajaCita                        124
+#define cancelarCita                    124
 #define infoUsuario                     127
 #define bajaUsuario                     129
+#define listaEspecial                   131
+#define buscarCita                      133
+#define altaEsp                         135
+#define bajaEsp                         137
+#define IDD_DIALOG2                     139
 #define IDSALIR                         1001
 #define ID_UwU                          1002
 #define ID_REg                          1002
@@ -44,6 +49,7 @@
 #define bajaMedico                      1006
 #define IDbRegresar                     1007
 #define ID_Regresarte                   1007
+
 #define IDC_BUTTON1                     1015
 #define IDC_EDIT3                       1016
 #define IDC_RADIO1                      1018
@@ -65,6 +71,7 @@
 #define IDC_MONTHCALENDAR1              1038
 #define IDC_COMBO1                      1039
 #define IDC_COMBO2                      1042
+
 #define inicioSalir                     1044
 #define inSalir                         1044
 #define inNombre                        1045
@@ -80,6 +87,8 @@
 #define infoPos                         1054
 #define usBajaElim                      1055
 #define usBajaNombre                    1056
+#define listboxEspecial                 1057
+
 #define ID_REGISTROS_MEDICOS            40001
 #define ID_REGISTROS_ESPECIALIDADES     40002
 #define ID_USUARIOS_BAJA                40003
@@ -98,17 +107,44 @@
 #define ID_ESPECIALIDAD_LISTA           40016
 #define ID_ESPECIALIDAD_ALTA            40017
 #define ID_ESPECIALIDAD_BAJA            40018
+
 #define infoUs                          40019
 #define altaUs                          40020
 #define bajaUs                          40021
+#define modMedico                       40022
+#define listaMed                        40023
+#define espMedico                       40024
+#define listaMedico                     40025
+#define infoUsSub                       40026
+#define altaUsSub                       40027
+#define bajaUsSub                       40028
+#define altaMedicoSub                   40029
+#define bajaMedicoSub                   40030
+#define modMedicoSub                    40031
+#define listaMedicoSub                  40032
+#define espMedicoSub                    40033
+#define altaPxSub                       40034
+#define bajaPxSub                       40035
+#define listaPxSub                      40036
+#define altaCitaSub                     40037
+#define ID_CITAS_CANCELARCITA           40038
+#define cancelarCitaSub                 40039
+#define listaCitaSub                    40040
+#define calendarioCitasSub              40041
+#define calendarioCitaSub               40042
+#define buscarCitaSub                   40043
+#define altaEspSub                      40044
+#define bajaEspSub                      40045
+#define listaEsp                        40046
+#define listaEspSub                     40047
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        131
-#define _APS_NEXT_COMMAND_VALUE         40022
-#define _APS_NEXT_CONTROL_VALUE         1057
+#define _APS_NEXT_RESOURCE_VALUE        141
+#define _APS_NEXT_COMMAND_VALUE         40048
+#define _APS_NEXT_CONTROL_VALUE         1059
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

@@ -50,6 +50,54 @@ BEGIN
     PUSHBUTTON      "Eliminar",usBajaElim,78,84,50,14
 END
 
+listaEspecial DIALOGEX 0, 0, 215, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Especialidades"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         listboxEspecial,6,6,204,96,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+buscarCita DIALOGEX 0, 0, 310, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Buscar Cita"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Como le gustaria buscar su cita",IDCANCEL,12,0,99,8
+    COMBOBOX        IDC_COMBO1,0,18,102,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "<-Se muestra si es por especialidad, dia, numero de cita, etc.",IDC_STATIC,114,18,194,8
+    PUSHBUTTON      "Buscar",IDC_BUTTON1,0,48,50,14
+END
+
+altaEsp DIALOGEX 0, 0, 310, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,199,155,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,253,155,50,14
+END
+
+bajaEsp DIALOGEX 0, 0, 310, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,199,155,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,253,155,50,14
+END
+
+listaEsp DIALOGEX 0, 0, 310, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,199,155,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,253,155,50,14
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -74,6 +122,46 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 98
     END
+
+    listaEspecial, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    buscarCita, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    altaEsp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    bajaEsp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    listaEsp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -89,6 +177,31 @@ BEGIN
 END
 
 bajaUsuario AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+listaEspecial AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+buscarCita AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+altaEsp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+bajaEsp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+listaEsp AFX_DIALOG_LAYOUT
 BEGIN
     0
 END
@@ -185,6 +298,7 @@ END
 listaMedicos DIALOGEX 0, 0, 273, 261
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
 CAPTION "Lista de Medicos"
+MENU IDR_MENU1
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     LISTBOX         IDC_LIST1,29,46,212,193,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
@@ -293,6 +407,7 @@ BEGIN
     CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,138,39,100,15
     EDITTEXT        IDC_EDIT2,40,57,86,14,ES_AUTOHSCROLL
     EDITTEXT        IDC_EDIT3,40,80,85,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Dar de baja",IDC_BUTTON1,188,79,50,14
 END
 
 altaCita DIALOGEX 0, 0, 397, 197
@@ -320,12 +435,12 @@ BEGIN
     LTEXT           "ESPECIALIDAD:",IDC_STATIC,55,47,52,8
 END
 
-bajaCita DIALOGEX 0, 0, 397, 197
+cancelarCita DIALOGEX 0, 0, 397, 197
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
 CAPTION "BAJA DE CITA"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    PUSHBUTTON      "BAJA DE CITA",IDCANCEL,311,137,56,17
+    PUSHBUTTON      "Dar de baja",IDCANCEL,311,137,56,17
     CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | MCS_NOTODAYCIRCLE | WS_TABSTOP,31,20,144,107
     LTEXT           "NOMBRE PX:",IDC_STATIC,198,27,42,8
     EDITTEXT        IDC_EDIT2,250,24,115,14,ES_AUTOHSCROLL | WS_DISABLED
@@ -372,7 +487,7 @@ BEGIN
     BEGIN
         LEFTMARGIN, 7
         RIGHTMARGIN, 324
-        TOPMARGIN, 7
+        TOPMARGIN, 6
         BOTTOMMARGIN, 234
     END
 
@@ -440,7 +555,7 @@ BEGIN
         BOTTOMMARGIN, 220
     END
 
-    bajaCita, DIALOG
+    cancelarCita, DIALOG
     BEGIN
         LEFTMARGIN, 7
         RIGHTMARGIN, 390
@@ -516,7 +631,7 @@ BEGIN
     0
 END
 
-bajaCita AFX_DIALOG_LAYOUT
+cancelarCita AFX_DIALOG_LAYOUT
 BEGIN
     0
 END
@@ -557,36 +672,35 @@ IDR_MENU1 MENU
 BEGIN
     POPUP "Usuarios"
     BEGIN
-        MENUITEM "Mi informacion",              infoUs
-        MENUITEM "Alta",                        altaUs
-        MENUITEM "Baja",                        bajaUs
+        MENUITEM "Mi informacion",              infoUsSub
+        MENUITEM "Alta",                        altaUsSub
+        MENUITEM "Baja",                        bajaUsSub
     END
     POPUP "Medicos"
     BEGIN
-        MENUITEM "ALta",                        ID_MEDICOS_ALTA
-        MENUITEM "Baja",                        ID_MEDICOS_BAJA
-        MENUITEM "Modificar",                   ID_MEDICOS_MODIFICAR
-        MENUITEM "Lista",                       ID_MEDICOS_LISTA
-        MENUITEM "Especialidades",              ID_MEDICOS_ESPECIALIDADES
+        MENUITEM "Alta",                        altaMedicoSub
+        MENUITEM "Baja",                        bajaMedicoSub
+        MENUITEM "Modificar",                   modMedicoSub
+        MENUITEM "Lista",                       listaMedicoSub
     END
     POPUP "Px"
     BEGIN
-        MENUITEM "Nuevo Px",                    ID_PX_ALTA
-        MENUITEM "Baja",                        ID_PX_BAJA
-        MENUITEM "Lista",                       ID_PX_LISTA
+        MENUITEM "Alta",                        altaPxSub
+        MENUITEM "Baja",                        bajaPxSub
+        MENUITEM "Lista",                       listaPxSub
     END
     POPUP "Citas"
     BEGIN
-        MENUITEM "Nueva cita",                  ID_CITAS_NUEVA
-        MENUITEM "Lista",                       ID_CITAS_LISTA
-        MENUITEM "Calendario",                  ID_CITAS_CALENDARIO
-        MENUITEM "Especialidad",                ID_CITAS_ESPECIALIDAD
+        MENUITEM "Nueva cita",                  altaCitaSub
+        MENUITEM "Cancelar Cita",               cancelarCitaSub
+        MENUITEM "Lista",                       listaCitaSub
+        MENUITEM "Buscar",                      buscarCitaSub
     END
     POPUP "Especialidad"
     BEGIN
-        MENUITEM "Baja",                        ID_ESPECIALIDAD_LISTA
-        MENUITEM "Alta",                        ID_ESPECIALIDAD_ALTA
-        MENUITEM "Listas",                      ID_ESPECIALIDAD_BAJA
+        MENUITEM "Alta",                        altaEspSub
+        MENUITEM "Baja",                        bajaEspSub
+        MENUITEM "Listas",                      listaEspSub
     END
 END
 

@@ -1,3 +1,46 @@
 ﻿  Source.cpp
-MSVCRTD.lib(exe_winmain.obj) : error LNK2019: símbolo externo WinMain sin resolver al que se hace referencia en la función "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\Users\betom\source\repos\PIA Estructura\x64\Debug\PIA Estructura.exe : fatal error LNK1120: 1 externos sin resolver
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(24,18): error C2664: 'HWND CreateDialogParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(24,18): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(5002,1): message : vea la declaración de 'CreateDialogParamW'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(24,18): message : al hacer coincidir la lista de argumentos '(HINSTANCE, LPWSTR, int, overloaded-function, long)'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(32,17): warning C4244: 'return': conversión de 'WPARAM' a 'int'; posible pérdida de datos
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(56,4): error C2664: 'INT_PTR DialogBoxParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(56,4): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(5070,1): message : vea la declaración de 'DialogBoxParamW'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(56,4): message : al hacer coincidir la lista de argumentos '(HINSTANCE, LPWSTR, HWND, overloaded-function, long)'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(61,4): error C2664: 'INT_PTR DialogBoxParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(61,4): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(5070,1): message : vea la declaración de 'DialogBoxParamW'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(61,4): message : al hacer coincidir la lista de argumentos '(HINSTANCE, LPWSTR, HWND, overloaded-function, long)'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(68,4): error C2664: 'INT_PTR DialogBoxParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(68,4): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(5070,1): message : vea la declaración de 'DialogBoxParamW'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(68,4): message : al hacer coincidir la lista de argumentos '(HINSTANCE, LPWSTR, HWND, overloaded-function, long)'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(72,4): error C2664: 'INT_PTR DialogBoxParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(72,4): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(5070,1): message : vea la declaración de 'DialogBoxParamW'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(72,4): message : al hacer coincidir la lista de argumentos '(HINSTANCE, LPWSTR, HWND, overloaded-function, long)'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(76,4): error C2664: 'INT_PTR DialogBoxParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(76,4): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(5070,1): message : vea la declaración de 'DialogBoxParamW'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(76,4): message : al hacer coincidir la lista de argumentos '(HINSTANCE, LPWSTR, HWND, overloaded-function, long)'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(80,4): error C2664: 'INT_PTR DialogBoxParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(80,4): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(5070,1): message : vea la declaración de 'DialogBoxParamW'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(80,4): message : al hacer coincidir la lista de argumentos '(HINSTANCE, LPWSTR, HWND, overloaded-function, long)'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(84,4): error C2664: 'INT_PTR DialogBoxParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(84,4): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(5070,1): message : vea la declaración de 'DialogBoxParamW'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(84,4): message : al hacer coincidir la lista de argumentos '(HINSTANCE, LPWSTR, HWND, overloaded-function, long)'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(88,4): error C2664: 'INT_PTR DialogBoxParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(88,4): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(5070,1): message : vea la declaración de 'DialogBoxParamW'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(88,4): message : al hacer coincidir la lista de argumentos '(HINSTANCE, LPWSTR, HWND, overloaded-function, long)'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(92,4): error C2664: 'INT_PTR DialogBoxParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(92,4): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(5070,1): message : vea la declaración de 'DialogBoxParamW'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(92,4): message : al hacer coincidir la lista de argumentos '(HINSTANCE, LPWSTR, HWND, overloaded-function, long)'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(96,4): error C2664: 'INT_PTR DialogBoxParamW(HINSTANCE,LPCWSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(96,4): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\winuser.h(5070,1): message : vea la declaración de 'DialogBoxParamW'
+C:\Users\betom\source\repos\PIA Estructura\PIA Estructura\Source.cpp(96,4): message : al hacer coincidir la lista de argumentos '(HINSTANCE, LPWSTR, HWND, overloaded-function, long)'
